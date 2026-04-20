@@ -529,6 +529,64 @@
     <p class="text-[11px] text-[color:var(--muted)] mt-3">가중치: 발행 구조 25% · 카운터파티 20% · 장기 비용 20% · 출구 15% · 유동성 10% · 한국 접근성 10%. 점수는 정성 평가 기반 — 절대값 아닌 상대비교용.</p>
   </section>
 
+  <section class="glass rounded-2xl p-6 md:p-8 mb-10" style="background: linear-gradient(180deg, rgba(245,177,61,.06), rgba(255,92,122,.04)); border: 1px solid rgba(245,177,61,.3);">
+    <div class="flex items-center gap-2 mb-2 flex-wrap">
+      <span class="pill pill-warn">⚡ 초보자 함정</span>
+      <span class="text-xs text-[color:var(--muted)]">"Bitget $650 vs HL $1,745 → 3배 차이!" ← 이거 틀렸습니다</span>
+    </div>
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">"가격이 달라요" — 단위가 다른 게 함정입니다</h2>
+
+    <div class="mb-5 text-[color:var(--muted)] text-sm italic leading-relaxed">
+      "비트겟/게이트에서 참여하고 동일수량 하리에서 숏헷징 하면 수렴해서 먹을 수 있을까요? 지금 장외가가 662달러정도인데 <b class="text-[color:var(--warn)] not-italic">하리에서 3배정도라</b> 뚝 관리만 하면 해볼만 한거같기도 하네요" — 시로<br>
+      "<b class="text-[color:var(--bad)] not-italic">가격이 달라요</b>" — npc (Citrini Analyst)<br>
+      "아 하리는 <b class="text-[color:var(--good)] not-italic">기업가치로 표기</b>하나보네요. 비트겟 가격은 기업가치로 1.5 게이트는 1.36이네요. 이래도 차이가 있긴 한데.. 고민되네요" — 시로 (이해 후)
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+      <div>
+        <div class="text-sm uppercase tracking-wider text-[color:var(--bad)] mb-3">❌ 겉보기 (초보자 오해)</div>
+        <div class="rounded-xl p-4 bg-[rgba(255,92,122,.05)] border border-[rgba(255,92,122,.2)] space-y-2">
+          <div class="flex justify-between text-sm"><span>Bitget preSPAX</span><b>$650/토큰</b></div>
+          <div class="flex justify-between text-sm"><span>Gate SPCX</span><b>$590/토큰</b></div>
+          <div class="flex justify-between text-sm"><span>Hyperliquid vntl</span><b>$1,745/계약</b></div>
+          <div class="pt-2 border-t border-[rgba(255,255,255,.08)] text-sm">
+            <b class="text-[color:var(--bad)]">"Hyperliquid가 Bitget의 2.68배!"</b><br>
+            <span class="text-xs text-[color:var(--muted)]">→ 수렴하면 +168% 수익? ❌ 틀림</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="text-sm uppercase tracking-wider text-[color:var(--good)] mb-3">✅ 실제 (같은 기업가치 추종)</div>
+        <div class="rounded-xl p-4 bg-[rgba(74,222,128,.05)] border border-[rgba(74,222,128,.2)] space-y-2">
+          <div class="flex justify-between text-sm"><span>Bitget 함의 valuation</span><b>$1.50T</b></div>
+          <div class="flex justify-between text-sm"><span>Gate 함의 valuation</span><b>$1.36T</b></div>
+          <div class="flex justify-between text-sm"><span>Hyperliquid 마크 valuation</span><b>$1.745T</b></div>
+          <div class="pt-2 border-t border-[rgba(255,255,255,.08)] text-sm">
+            <b class="text-[color:var(--good)]">진짜 갭: HL vs Bitget = +16.3%</b><br>
+            <span class="text-xs text-[color:var(--muted)]">→ 수렴 베팅은 유효. 단 예상 수익은 +16% (+펀딩).</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rounded-xl p-4 bg-[rgba(0,0,0,.25)] border border-[rgba(255,255,255,.08)] mb-4">
+      <div class="text-sm uppercase tracking-wider text-[color:var(--info)] mb-2">🏪 쉬운 비유 — "같은 금괴, 다른 단위의 가격표"</div>
+      <div class="text-sm leading-relaxed text-[color:var(--muted)]">
+        <b class="text-[color:var(--text)]">A 가게 (Bitget)</b>: "금괴 1조각 $650" — 총 수량 1,000조각<br>
+        <b class="text-[color:var(--text)]">B 가게 (Hyperliquid)</b>: "금괴 1덩어리 $1,745" — 1덩어리 = A의 2.68조각<br><br>
+        → 겉으로는 B가 2.68배 비싸 보이지만, <b>같은 단위(기업가치 $)로 환산</b>하면 B가 A보다 <b class="text-[color:var(--warn)]">고작 16% 비쌈</b>.<br>
+        → Hyperliquid는 "<b>linear valuation contract</b>" — 마크 가격이 <b>SpaceX 기업가치(단위: $T)</b>를 직접 추종. Bitget/Gate는 "<b>토큰당 가격</b>" 표기.<br>
+        → 청약가 × 총수량 = 함의 valuation으로 환산해야 공정 비교 가능.
+      </div>
+    </div>
+
+    <div class="rounded-xl p-4 bg-[rgba(0,229,168,.06)] border border-[rgba(0,229,168,.25)]">
+      <div class="text-sm leading-relaxed">
+        <b class="text-[color:var(--hl)]">💡 결론</b>: 시로의 페어 트레이딩 아이디어는 <b>방향은 맞음</b> — Hyperliquid 숏 + Bitget/Gate 롱으로 갭 수렴 베팅 가능. 단 기대 수익은 ×3배가 아닌 <b>+16% (+펀딩 캐리 ~18%) = 총 +30~35%</b>. 아래 차익거래 섹션에서 전략 A/B 상세 분석.
+      </div>
+    </div>
+  </section>
+
   <section class="glass rounded-2xl p-6 md:p-8 mb-10" style="background: linear-gradient(180deg, rgba(96,165,250,.05), rgba(245,177,61,.04)); border: 1px solid rgba(96,165,250,.25);">
     <div class="flex items-center gap-2 mb-2 flex-wrap">
       <span class="pill pill-info">단기 트레이딩</span>
