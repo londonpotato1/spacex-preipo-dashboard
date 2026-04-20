@@ -355,6 +355,39 @@
       "Users can also wait for the lock-up period of the preSPAX token's <b class="text-[color:var(--warn)]">underlying debt asset</b> to end <b class="text-[color:var(--warn)]">(typically around 6 months after the SpaceX IPO)</b>, after which <b class="text-[color:var(--warn)]">the issuer will entrust Bitget to convert it into tokens or USDT</b> based on the underlying company's market price. <b class="text-[color:var(--warn)]">For details, refer to the subscription agreement.</b>"
     </div>
 
+    <div class="text-xs text-[color:var(--muted)] uppercase tracking-wider mb-2 mt-6">📜 Hyperliquid (Ventuals + HIP-3) 핵심 verbatim</div>
+    <div class="rounded-lg p-4 bg-[rgba(0,0,0,.25)] border border-[rgba(96,165,250,.2)] text-[13px] leading-relaxed font-mono text-[color:var(--text)]">
+      <b class="text-[color:var(--info)]">[Ventuals Docs]</b> "Ventuals perpetuals are <b class="text-[color:var(--warn)]">linear valuation contracts</b> margined and settled in <b class="text-[color:var(--warn)]">USDH</b>, a US dollar-pegged stablecoin. PnL is cash-settled in USDH with no USDH/USD conversion."<br><br>
+      <b class="text-[color:var(--info)]">[HIP-3 Settlement]</b> "<b class="text-[color:var(--bad)]">The deployer may settle an asset using the haltTrading action.</b> This cancels all orders and <b class="text-[color:var(--bad)]">settles positions to the current mark price.</b>"<br><br>
+      <b class="text-[color:var(--info)]">[HIP-3 Staking]</b> "The staking requirement for mainnet will be <b class="text-[color:var(--warn)]">500k HYPE</b>. ... maintained for 30 days even after all positions closed."<br><br>
+      <b class="text-[color:var(--info)]">[Live API · 2026-04-20]</b> vntl:SPACEX <b class="text-[color:var(--warn)]">OI cap = $5,000,000</b> (정확값)
+    </div>
+    <div class="grid md:grid-cols-2 gap-3 mt-3 mb-6">
+      <div class="corr">
+        <div class="text-sm font-semibold">⑧ vntl 단위 해소 — "linear valuation contracts" <span class="text-[color:var(--good)]">✅</span></div>
+        <div class="text-xs text-[color:var(--muted)] mt-1">마크 $1,745는 share price가 아니라 <b>SpaceX valuation을 직접 추종</b>(약 $1.745T market cap 추종). Bitget 함의 $1.5T와 직접 비교 가능 → Hyperliquid가 약 16% 비싼 valuation 호가.</div>
+      </div>
+      <div class="corr">
+        <div class="text-sm font-semibold">⑨ Sunset 절차 공식 확인 <span class="text-[color:var(--bad)]">🚨</span></div>
+        <div class="text-xs text-[color:var(--muted)] mt-1">Ventuals deployer가 <b>언제든 haltTrading으로 SPACEX 마켓 종료 가능</b>. 종료 시 <b>마크가 기준 강제 정산</b> — 보유자 동의 불필요. 장기 보유 비대칭 리스크의 핵심.</div>
+      </div>
+    </div>
+
+    <div class="text-xs text-[color:var(--muted)] uppercase tracking-wider mb-2 mt-6">📜 Gate SPCX 핵심 verbatim</div>
+    <div class="rounded-lg p-4 bg-[rgba(0,0,0,.25)] border border-[rgba(255,92,122,.2)] text-[13px] leading-relaxed font-mono text-[color:var(--text)]">
+      "Certificates are <b class="text-[color:var(--warn)]">fully unlocked and tradable 24/7 on Gate's internal pre-IPO trading market.</b> Holders can freely buy and sell SPCX on the platform <b class="text-[color:var(--warn)]">before the target company's IPO or lock-up period</b>, allowing for price discovery and portfolio adjustments."
+    </div>
+    <div class="grid md:grid-cols-2 gap-3 mt-3 mb-6">
+      <div class="corr">
+        <div class="text-sm font-semibold">⑩ Gate "internal market only" 공식 확인 <span class="text-[color:var(--bad)]">✅</span></div>
+        <div class="text-xs text-[color:var(--muted)] mt-1">Gate 공식이 직접 <b>"internal pre-IPO trading market"</b>으로 표현 — 외부 거래소·온체인 출금 불가. 단일 카운터파티 리스크 공식 확인.</div>
+      </div>
+      <div class="corr">
+        <div class="text-sm font-semibold">⑪ Gate에도 lock-up 존재 시사 <span class="text-[color:var(--warn)]">⚠️</span></div>
+        <div class="text-xs text-[color:var(--muted)] mt-1">"before the target company's IPO <b>or lock-up period</b>" → SPCX도 IPO 후 lock-up 기간 있음 시사. 정확한 기간·정산 조건 미공개.</div>
+      </div>
+    </div>
+
     <hr class="my-6 border-[rgba(255,255,255,.08)]">
 
     <div class="flex items-center gap-3 mb-4 flex-wrap">
@@ -444,6 +477,116 @@
       </table>
     </div>
     <p class="text-[11px] text-[color:var(--muted)] mt-3">가중치: 발행 구조 25% · 카운터파티 20% · 장기 비용 20% · 출구 15% · 유동성 10% · 한국 접근성 10%. 점수는 정성 평가 기반 — 절대값 아닌 상대비교용.</p>
+  </section>
+
+  <section class="glass rounded-2xl p-6 md:p-8 mb-10" style="background: linear-gradient(180deg, rgba(96,165,250,.05), rgba(245,177,61,.04)); border: 1px solid rgba(96,165,250,.25);">
+    <div class="flex items-center gap-2 mb-2 flex-wrap">
+      <span class="pill pill-info">단기 트레이딩</span>
+      <span class="text-xs text-[color:var(--muted)]">차익거래 / 페어 트레이딩 분석 — 장기 투자자에겐 무관</span>
+    </div>
+    <h2 class="text-2xl md:text-3xl font-bold mb-2">"Hyperliquid 숏 + Bitget 롱 차익거래는 가능한가?" → <span class="text-[color:var(--warn)]">이론상 매력, 실전 어려움.</span></h2>
+    <p class="text-sm text-[color:var(--muted)] mb-6">현재 Hyperliquid 마크가가 Bitget 함의 valuation 대비 약 16% 비싸고, 펀딩비도 숏 수령 구조. 그러나 6가지 결정적 문제로 "무위험 차익거래"는 불가.</p>
+
+    <div class="grid md:grid-cols-3 gap-4 mb-6">
+      <div class="rounded-xl p-4 bg-[rgba(0,0,0,.2)] border border-[rgba(96,165,250,.2)]">
+        <div class="text-xs text-[color:var(--info)] uppercase tracking-wider mb-1">Hyperliquid 마크</div>
+        <div class="text-2xl font-bold">$1,745</div>
+        <div class="text-[11px] text-[color:var(--muted)]">linear valuation contract → ≈ $1.745T market cap 추종</div>
+      </div>
+      <div class="rounded-xl p-4 bg-[rgba(0,0,0,.2)] border border-[rgba(0,229,168,.2)]">
+        <div class="text-xs text-[color:var(--hl)] uppercase tracking-wider mb-1">Bitget 함의</div>
+        <div class="text-2xl font-bold">$1.5T</div>
+        <div class="text-[11px] text-[color:var(--muted)]">청약가 $650 × 94,000 = $61.1M / 함의 평가 $1.5T</div>
+      </div>
+      <div class="rounded-xl p-4 bg-[rgba(0,0,0,.2)] border border-[rgba(245,177,61,.2)]">
+        <div class="text-xs text-[color:var(--warn)] uppercase tracking-wider mb-1">갭 / 펀딩</div>
+        <div class="text-2xl font-bold">+16% / +37%</div>
+        <div class="text-[11px] text-[color:var(--muted)]">HL valuation 프리미엄 16% · 숏이 펀딩 연 ~37% 수령</div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-5 mb-6">
+      <div class="rounded-xl p-5 bg-[rgba(96,165,250,.06)] border border-[rgba(96,165,250,.3)]">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="pill pill-info">전략 A · 추천</span>
+          <h3 class="text-lg font-bold">Hyperliquid 숏 단독</h3>
+        </div>
+        <div class="text-sm space-y-2">
+          <div><b class="text-[color:var(--good)]">방향성</b>: 마크-오라클 갭 수렴 베팅 + 펀딩 수령</div>
+          <div><b class="text-[color:var(--good)]">진입</b>: vntl SPACEX 숏 (3x 격리, USDH 마진)</div>
+          <div><b class="text-[color:var(--good)]">예상 수익</b>: 6개월 보유 시 +갭 수렴 (16%) + 펀딩 (~18%) ≈ <b class="text-[color:var(--good)]">+30~35%</b></div>
+          <div><b class="text-[color:var(--bad)]">위험</b>: 갭 확대 / 펀딩 역전 / vntl haltTrading sunset / 유동성 OI 캡 $5M</div>
+          <div class="pt-2 border-t border-[rgba(255,255,255,.06)] text-xs text-[color:var(--muted)]">권장 사이즈: 계좌 자본의 5~10%, OI 캡 고려해 $10k~$50k 단위. 매일 펀딩 방향 모니터링.</div>
+        </div>
+      </div>
+      <div class="rounded-xl p-5 bg-[rgba(245,177,61,.06)] border border-[rgba(245,177,61,.3)]">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="pill pill-warn">전략 B · 비추천</span>
+          <h3 class="text-lg font-bold">Bitget 롱 + Hyperliquid 숏 (페어)</h3>
+        </div>
+        <div class="text-sm space-y-2">
+          <div><b class="text-[color:var(--warn)]">의도</b>: 가격 헤지 + 펀딩 수령 (델타 뉴트럴)</div>
+          <div><b class="text-[color:var(--warn)]">헤지 비율</b>: Bitget $650 ($1.5T 함의) ↔ HL 0.86 contract 숏 ($1.745T → $1.5T 추종)</div>
+          <div><b class="text-[color:var(--bad)]">최대 사이즈</b>: HL OI 캡 $5M에 묶임 — Bitget 청약 $61M 중 일부만 헤지 가능</div>
+          <div><b class="text-[color:var(--bad)]">기간</b>: Bitget 측 자본 6개월~∞ 묶임 vs HL 즉시 풀림</div>
+          <div class="pt-2 border-t border-[rgba(255,255,255,.06)] text-xs text-[color:var(--muted)]">"무위험"으로 보이지만 단위·basis·sunset·유동성 위험 누적. 사이즈 $10k 미만 실험 권장.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-sm uppercase tracking-wider text-[color:var(--bad)] mb-3">⚠️ 6가지 결정적 문제 (페어 전략 한정)</div>
+    <div class="grid md:grid-cols-3 gap-3 mb-6">
+      <div class="rounded-lg p-3 bg-[rgba(255,92,122,.05)] border border-[rgba(255,92,122,.15)]">
+        <div class="font-bold text-sm mb-1">① 단위 mismatch</div>
+        <div class="text-xs text-[color:var(--muted)]">HL "linear valuation contract" vs Bitget "토큰당 $650" — 헤지 비율 추정만 가능, 정밀 매칭 어려움.</div>
+      </div>
+      <div class="rounded-lg p-3 bg-[rgba(255,92,122,.05)] border border-[rgba(255,92,122,.15)]">
+        <div class="font-bold text-sm mb-1">② 유동성 캡 12배 차이</div>
+        <div class="text-xs text-[color:var(--muted)]">HL OI cap <b>$5M</b> vs Bitget commit cap <b>$1B</b>. 큰 사이즈 헤지 불가.</div>
+      </div>
+      <div class="rounded-lg p-3 bg-[rgba(255,92,122,.05)] border border-[rgba(255,92,122,.15)]">
+        <div class="font-bold text-sm mb-1">③ 타임라인 비대칭</div>
+        <div class="text-xs text-[color:var(--muted)]">HL 숏: 즉시 청산. Bitget 롱: IPO 후 ~6개월 락업 (최소 1년, 최대 무기한).</div>
+      </div>
+      <div class="rounded-lg p-3 bg-[rgba(255,92,122,.05)] border border-[rgba(255,92,122,.15)]">
+        <div class="font-bold text-sm mb-1">④ 펀딩 방향 역전</div>
+        <div class="text-xs text-[color:var(--muted)]">현재 +16% 프리미엄 → 숏 수령. 갭 좁아지면 숏이 지불로 역전 가능.</div>
+      </div>
+      <div class="rounded-lg p-3 bg-[rgba(255,92,122,.05)] border border-[rgba(255,92,122,.15)]">
+        <div class="font-bold text-sm mb-1">⑤ vntl sunset 위험</div>
+        <div class="text-xs text-[color:var(--muted)]">HIP-3: deployer가 <b>haltTrading</b>으로 강제 정산 가능 → 헤지 단방향으로 깨짐.</div>
+      </div>
+      <div class="rounded-lg p-3 bg-[rgba(255,92,122,.05)] border border-[rgba(255,92,122,.15)]">
+        <div class="font-bold text-sm mb-1">⑥ 4중 카운터파티</div>
+        <div class="text-xs text-[color:var(--muted)]">Bitget + Republic + vntl + USDH. 어느 하나만 부도해도 헤지 깨짐.</div>
+      </div>
+    </div>
+
+    <div class="text-sm uppercase tracking-wider text-[color:var(--warn)] mb-3">📈 시나리오별 P&L (Bitget $10k 롱 + HL 동일 명목 숏)</div>
+    <div class="overflow-x-auto mb-4">
+      <table class="compare scoring">
+        <thead>
+          <tr><th>시나리오</th><th class="text-right">HL 숏 P&L</th><th class="text-right">Bitget OTC P&L</th><th class="text-right">순익</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="metric">갭 수렴 + 펀딩 수령</td><td class="text-right text-[color:var(--good)]">+$1,000 (가격) +$1,800 (펀딩)</td><td class="text-right text-[color:var(--bad)]">−$500 (OTC 디스카운트)</td><td class="text-right"><b class="text-[color:var(--good)]">+$2,300</b></td></tr>
+          <tr><td class="metric">갭 확대 + 펀딩 역전</td><td class="text-right text-[color:var(--bad)]">−$500 (가격) −$1,800 (지불)</td><td class="text-right text-[color:var(--good)]">+$500</td><td class="text-right"><b class="text-[color:var(--bad)]">−$1,800</b></td></tr>
+          <tr><td class="metric">vntl haltTrading sunset</td><td class="text-right text-[color:var(--warn)]">강제 정산</td><td class="text-right text-[color:var(--bad)]">단방향 노출</td><td class="text-right"><b class="text-[color:var(--bad)]">위험 폭증</b></td></tr>
+          <tr><td class="metric">Bitget OTC 동결</td><td class="text-right text-[color:var(--good)]">청산 가능</td><td class="text-right text-[color:var(--bad)]">회수 불가</td><td class="text-right"><b class="text-[color:var(--bad)]">단방향 손실</b></td></tr>
+          <tr><td class="metric">SpaceX IPO 발생 (6개월 후)</td><td class="text-right text-[color:var(--bad)]">평가손 발생 (가격 급등)</td><td class="text-right text-[color:var(--good)]">USDT 정산 +이익</td><td class="text-right"><b class="text-[color:var(--good)]">델타 뉴트럴</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="rounded-xl p-5 bg-[rgba(96,165,250,.08)] border border-[rgba(96,165,250,.3)]">
+      <div class="text-sm uppercase tracking-wider text-[color:var(--info)] mb-2">💡 단기 트레이딩 결론</div>
+      <div class="text-sm leading-relaxed">
+        <b>전략 A (Hyperliquid 숏 단독)</b>이 깔끔함 — Bitget 측 6개월~∞ 자본 묶임 없이 갭 수렴 + 펀딩 수령.
+        <b class="text-[color:var(--warn)]">전략 B (페어)</b>는 "무위험"이 아닌 <b>"방향성 위험만 줄이고 basis·sunset·카운터파티 위험은 남기는"</b> 트레이드.
+        <br><br>
+        <b class="text-[color:var(--bad)]">중요</b>: 이 모든 분석은 <b>장기 투자(SpaceX 진짜 노출)에는 무관</b>. 차익거래는 단기 트레이딩 전용 — 본 대시보드 상단 "장기 노출은 셋 다 부적합" 결론과 별개 트랙.
+      </div>
+    </div>
   </section>
 
   <section class="grid lg:grid-cols-3 gap-5 mb-10">
