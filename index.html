@@ -589,6 +589,95 @@
     </div>
   </section>
 
+  <section class="glass rounded-2xl p-6 md:p-8 mb-10" style="background: linear-gradient(180deg, rgba(245,177,61,.05), rgba(0,229,168,.04)); border: 1px solid rgba(245,177,61,.25);">
+    <div class="flex items-center gap-2 mb-2 flex-wrap">
+      <span class="pill pill-warn">커뮤니티 인사이트</span>
+      <span class="text-xs text-[color:var(--muted)]">실투자자 톡방 분석 — Bitget 본문에 안 나온 두 가지</span>
+    </div>
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">SPV 구조 + VIP1 over-commit 전략</h2>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+      <div>
+        <div class="text-sm uppercase tracking-wider text-[color:var(--warn)] mb-3">🔍 SPV 구조 — 카운터파티 4단계</div>
+        <div class="text-[15px] leading-relaxed space-y-2">
+          <div class="text-[color:var(--muted)] text-sm italic">"빗겟에서 하는 게 리퍼블릭이면 리퍼블릭도 <b class="text-[color:var(--warn)] not-italic">SPV로 들어가는 거</b>긴 함. 개인이 비상장주식을 몇 주씩 살 수 있는 게 아니라 일반적인 방식이지만 <b class="text-[color:var(--warn)] not-italic">내가 원하는 대로 핸들링이 어려운</b>.."</div>
+          <div class="text-xs text-[color:var(--muted)] mt-1">— 커뮤니티 톡방 인용</div>
+        </div>
+        <div class="mt-4 rounded-lg p-4 bg-[rgba(0,0,0,.25)] border border-[rgba(255,255,255,.08)] font-mono text-[13px] leading-relaxed">
+          <div class="text-[color:var(--muted)]">실제 자금 흐름:</div>
+          <div class="mt-2">당신 ↓</div>
+          <div>→ Bitget <span class="text-[color:var(--info)]">preSPAX</span> <span class="text-[11px] text-[color:var(--muted)]">(거래소 OTC)</span></div>
+          <div>→ Republic <span class="text-[color:var(--warn)]">debt instrument</span> <span class="text-[11px] text-[color:var(--muted)]">(신용 노트)</span></div>
+          <div>→ Republic <span class="text-[color:var(--bad)]">SPV (LLC/Cayman)</span> <span class="text-[11px] text-[color:var(--muted)]">(특수목적법인)</span></div>
+          <div>→ <span class="text-[color:var(--good)]">SpaceX 주식</span> <span class="text-[11px] text-[color:var(--muted)]">(실물)</span></div>
+        </div>
+        <div class="mt-3 text-xs text-[color:var(--muted)]">Bitget Support 본문엔 "regulated issuer Republic"만 명시 — <b class="text-[color:var(--warn)]">SPV 단계는 비공개</b>. Forge·EquityZen·AngelList 등 secondary 시장의 일반 관행이지만, 어느 한 단계 부도/제한 시 회수 어려움.</div>
+      </div>
+
+      <div>
+        <div class="text-sm uppercase tracking-wider text-[color:var(--hl)] mb-3">💡 VIP1 over-commit 전략</div>
+        <div class="text-[15px] leading-relaxed space-y-2">
+          <div class="text-[color:var(--muted)] text-sm italic">"VIP 1부터는 15,000이구나. 천불이면 그닥인데 <b class="text-[color:var(--warn)] not-italic">만오천불 다 깨면</b>?"<br>"넵 <b class="text-[color:var(--warn)] not-italic">계정당 3만불 넣고 15,000불 캡</b>"</div>
+          <div class="text-xs text-[color:var(--muted)] mt-1">— 커뮤니티 톡방 인용</div>
+        </div>
+        <div class="mt-4 rounded-lg p-4 bg-[rgba(0,0,0,.25)] border border-[rgba(255,255,255,.08)]">
+          <div class="text-xs text-[color:var(--muted)] mb-2">Over-commit 메커니즘 (Bitget IPO Prime 비례 배분)</div>
+          <table class="w-full text-sm">
+            <tbody>
+              <tr class="border-b border-[rgba(255,255,255,.05)]"><td class="py-1 text-[color:var(--muted)]">VIP 등급</td><td class="text-right font-semibold">VIP1</td></tr>
+              <tr class="border-b border-[rgba(255,255,255,.05)]"><td class="py-1 text-[color:var(--muted)]">commit 입금</td><td class="text-right font-semibold">$30,000</td></tr>
+              <tr class="border-b border-[rgba(255,255,255,.05)]"><td class="py-1 text-[color:var(--muted)]">실제 cap (받는 한도)</td><td class="text-right font-semibold text-[color:var(--good)]">$15,000</td></tr>
+              <tr class="border-b border-[rgba(255,255,255,.05)]"><td class="py-1 text-[color:var(--muted)]">잔여 환불</td><td class="text-right font-semibold">$15,000 (USDT)</td></tr>
+              <tr><td class="py-1 text-[color:var(--muted)]">받는 토큰</td><td class="text-right font-semibold">~23 preSPAX ($650 × 23)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mt-3 text-xs text-[color:var(--muted)]"><b>왜 over-commit?</b> 청약은 비례 배분 — 내가 commit한 만큼 무조건 받는 게 아니라 전체 청약량에 비례. 따라서 <b>최대치 commit하고 일부 환불 받는 게 합리적</b>. VIP0 $1k은 사이즈 작아 의미 없음.</div>
+      </div>
+    </div>
+
+    <div class="text-sm uppercase tracking-wider text-[color:var(--info)] mb-3">📊 VIP1 $15k 전략 — 시나리오별 P&L 및 기대값</div>
+    <div class="overflow-x-auto mb-4">
+      <table class="compare scoring">
+        <thead>
+          <tr><th>시나리오</th><th class="text-right">확률 추정</th><th class="text-right">P&L</th><th class="text-right">기대 기여</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="metric">4/21 OTC fade 즉시 매도 (+20%)</td><td class="text-right">~50%</td><td class="text-right text-[color:var(--good)]">+$3,000</td><td class="text-right">+$1,500</td></tr>
+          <tr><td class="metric">IPO 6개월 후 USDT 정산 (실질 +20%)</td><td class="text-right">~15%</td><td class="text-right text-[color:var(--good)]">+$3,000</td><td class="text-right">+$450</td></tr>
+          <tr><td class="metric">IPO 지연 2~5년 / 기회비용</td><td class="text-right">~25%</td><td class="text-right text-[color:var(--bad)]">−$5,000 (기회비용)</td><td class="text-right">−$1,250</td></tr>
+          <tr><td class="metric">IPO 안 함 / 거래소 부도</td><td class="text-right">~10%</td><td class="text-right text-[color:var(--bad)]">−$15,000 (전액)</td><td class="text-right">−$1,500</td></tr>
+          <tr style="background:rgba(255,255,255,.03)"><td class="metric"><b>종합 기대값 (6개월 horizon)</b></td><td></td><td></td><td class="text-right"><b class="text-[color:var(--warn)]" style="font-size:16px">−$800</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text-[11px] text-[color:var(--muted)] mb-6">* 확률은 Musk 발언, SEC S-1 미제출, 과거 사례 기반 정성 추정. 실거래 직전 재평가 필요. <br>* 비교: 같은 $15k를 Tesla/SP500에 넣으면 6개월 기대 +$750 (연 10% 가정), 변동성 ±$2,000 — <b>거의 비슷하나 합법·즉시 회수·세무 정상</b>.</div>
+
+    <div class="grid md:grid-cols-3 gap-3 mb-6">
+      <div class="rounded-lg p-4 bg-[rgba(74,222,128,.06)] border border-[rgba(74,222,128,.25)]">
+        <div class="text-xs text-[color:var(--good)] font-semibold mb-1">✅ 추천 실행 경로</div>
+        <div class="text-sm font-bold mb-2">VIP1 $30k commit → 4/21 fade 매도</div>
+        <div class="text-xs text-[color:var(--muted)]">청약으로 $15k 받고 OTC 개장 첫 1시간 내 +20~30% 호가에 매도. 6개월 묶이지 않음. 기대값 +$3,000.</div>
+      </div>
+      <div class="rounded-lg p-4 bg-[rgba(245,177,61,.06)] border border-[rgba(245,177,61,.25)]">
+        <div class="text-xs text-[color:var(--warn)] font-semibold mb-1">⚠️ 가능 단순 보유</div>
+        <div class="text-sm font-bold mb-2">VIP1 $15k → IPO 정산까지 보유</div>
+        <div class="text-xs text-[color:var(--muted)]">"잃어도 되는 돈" 원칙 적용 시만. 기대값 ETF 보유와 비슷하나 비대칭 위험. 굳이 할 이유 약함.</div>
+      </div>
+      <div class="rounded-lg p-4 bg-[rgba(255,92,122,.06)] border border-[rgba(255,92,122,.25)]">
+        <div class="text-xs text-[color:var(--bad)] font-semibold mb-1">❌ 비추</div>
+        <div class="text-sm font-bold mb-2">VIP0 $1,000</div>
+        <div class="text-xs text-[color:var(--muted)]">절대 금액 작아 수익 미미. KYC·시간·기회비용 대비 무의미. 차라리 안 하기.</div>
+      </div>
+    </div>
+
+    <div class="rounded-xl p-4 bg-[rgba(245,177,61,.08)] border border-[rgba(245,177,61,.3)]">
+      <div class="text-sm">
+        <b class="text-[color:var(--warn)]">⚡ 핵심</b>: 커뮤니티가 본 그대로 — <b>"핸들링이 어렵다"</b>는 게 이 상품의 본질. SPV 4단계 + 거래소 OTC 한정 + 6개월 락업 + 약관 비공개. <b>VIP1 사이즈로 4/21 OTC fade 단기 화폐화가 가장 실속</b>. 장기 보유는 진짜 SpaceX 주식 IPO 후 정규 매수가 정직.
+      </div>
+    </div>
+  </section>
+
   <section class="grid lg:grid-cols-3 gap-5 mb-10">
     <div class="glass rounded-2xl p-5 lg:col-span-2 reco">
       <div class="text-xs uppercase tracking-wider text-[color:var(--hl)] mb-2">권장 의사결정</div>
