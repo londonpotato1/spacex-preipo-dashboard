@@ -78,9 +78,59 @@
     <div class="text-right">
       <div class="text-xs text-[color:var(--muted)]">데이터 기준</div>
       <div class="font-semibold">2026-04-20 (KST)</div>
-      <div class="mt-1 text-[11px] text-[color:var(--muted)]">2단계 팩트체크 완료</div>
+      <div class="mt-1 text-[11px] text-[color:var(--muted)]">3단계 팩트체크 완료</div>
     </div>
   </header>
+
+  <section class="glass rounded-2xl p-5 md:p-6 mb-8" style="background: linear-gradient(180deg, rgba(245,177,61,.08), rgba(245,177,61,.02)); border: 1px solid rgba(245,177,61,.35);">
+    <div class="flex items-center gap-2 mb-3 flex-wrap">
+      <span class="pill pill-warn">⚡ 자주 오해하는 포인트</span>
+      <span class="text-xs text-[color:var(--muted)]">Bitget preSPAX — 락업 필수? 즉시 매도 가능?</span>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6 items-start">
+      <div>
+        <div class="text-lg font-bold mb-2">Q. "preSPAX 토큰에 락업이 걸려서 6개월 기다려야 하나요?"</div>
+        <div class="text-xl font-bold text-[color:var(--good)] mb-2">A. 아니요 — 토큰 자체엔 락업 없음.</div>
+        <div class="text-sm text-[color:var(--muted)] leading-relaxed">락업은 <b class="text-[color:var(--warn)]">"underlying debt asset"(Republic SPV 보유 SpaceX 주식)</b>에만 걸려 있음. 당신이 받는 preSPAX 토큰은 OTC 개장 즉시 자유롭게 매매 가능.</div>
+        <div class="mt-3 rounded-lg p-3 bg-[rgba(0,0,0,.3)] border border-[rgba(255,255,255,.08)] text-[12px] font-mono leading-relaxed">
+          "Once the IPO Prime token allocation has ended, <b class="text-[color:var(--good)]">users can trade preSPAX tokens on the OTC market</b> that will open later... Users can <b class="text-[color:var(--warn)]">also wait for the lock-up period of the preSPAX token's underlying debt asset to end</b>..."<br><span class="text-[10px] text-[color:var(--muted)]">— Bitget Support (verbatim)</span>
+        </div>
+      </div>
+      <div>
+        <div class="text-sm uppercase tracking-wider text-[color:var(--info)] mb-2">두 경로 (선택)</div>
+        <table class="w-full text-sm mb-4">
+          <thead>
+            <tr class="border-b border-[rgba(255,255,255,.1)]">
+              <th class="text-left py-2 text-xs text-[color:var(--muted)]">경로</th>
+              <th class="text-center py-2 text-xs text-[color:var(--muted)]">락업</th>
+              <th class="text-right py-2 text-xs text-[color:var(--muted)]">언제 매도/정산</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-[rgba(255,255,255,.05)]">
+              <td class="py-2"><b class="text-[color:var(--good)]">A</b> OTC 매도 <span class="text-[11px] text-[color:var(--muted)]">(대부분)</span></td>
+              <td class="text-center text-[color:var(--good)]">❌ 없음</td>
+              <td class="text-right font-semibold">04-21 21:00 KST부터</td>
+            </tr>
+            <tr>
+              <td class="py-2"><b class="text-[color:var(--warn)]">B</b> Issuer 정산 <span class="text-[11px] text-[color:var(--muted)]">(선택)</span></td>
+              <td class="text-center text-[color:var(--warn)]">약 6개월</td>
+              <td class="text-right font-semibold">SpaceX IPO 후 ~6개월</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="text-sm uppercase tracking-wider text-[color:var(--warn)] mb-2">📅 오늘 타임라인 (KST, 2026-04-21)</div>
+        <table class="w-full text-sm">
+          <tbody>
+            <tr class="border-b border-[rgba(255,255,255,.05)]"><td class="py-1 text-[color:var(--muted)]">15:00</td><td class="text-right">Commitment 종료</td></tr>
+            <tr class="border-b border-[rgba(255,255,255,.05)]"><td class="py-1 text-[color:var(--muted)]">15:00 ~ 19:00</td><td class="text-right">분배 (토큰 지급)</td></tr>
+            <tr><td class="py-1 text-[color:var(--good)] font-bold">🚀 21:00</td><td class="text-right font-bold text-[color:var(--good)]">OTC 개장 — 즉시 매도 가능</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="mt-4 text-[11px] text-[color:var(--muted)]">⚠️ 단 제약: Bitget 내부 OTC에서만 거래 / 외부 출금 불가 / 호가는 Bitget 내부 시장에 종속 / 초반 변동성·spread 큼.</div>
+  </section>
 
   <section class="grid md:grid-cols-3 gap-4 mb-10">
     <div class="glass rounded-2xl p-5">
@@ -123,9 +173,9 @@
             <tr class="border-b border-[rgba(255,255,255,.05)]"><td class="py-2 text-[color:var(--muted)]">무엇을 사는가</td><td class="py-2 text-right font-semibold">SpaceX <b class="text-[color:var(--bad)]">차용증</b></td></tr>
             <tr class="border-b border-[rgba(255,255,255,.05)]"><td class="py-2 text-[color:var(--muted)]">의결권 / 배당</td><td class="py-2 text-right font-semibold text-[color:var(--bad)]">없음</td></tr>
             <tr class="border-b border-[rgba(255,255,255,.05)]"><td class="py-2 text-[color:var(--muted)]">실물 주식 보관</td><td class="py-2 text-right font-semibold text-[color:var(--bad)]">없음 (셋 다)</td></tr>
-            <tr class="border-b border-[rgba(255,255,255,.05)]"><td class="py-2 text-[color:var(--muted)]">언제 돈 받나</td><td class="py-2 text-right font-semibold">SpaceX IPO 후 6개월</td></tr>
+            <tr class="border-b border-[rgba(255,255,255,.05)]"><td class="py-2 text-[color:var(--muted)]">언제 돈 받나</td><td class="py-2 text-right font-semibold">OTC 매도: <b class="text-[color:var(--good)]">즉시</b> / Issuer 정산: IPO+6개월</td></tr>
             <tr class="border-b border-[rgba(255,255,255,.05)]"><td class="py-2 text-[color:var(--muted)]">받는 형태</td><td class="py-2 text-right font-semibold">USDT 또는 주식토큰 <span class="text-[color:var(--warn)] text-xs">(issuer 결정)</span></td></tr>
-            <tr><td class="py-2 text-[color:var(--muted)]">IPO 안 하면</td><td class="py-2 text-right font-semibold text-[color:var(--bad)]">무기한 동결</td></tr>
+            <tr><td class="py-2 text-[color:var(--muted)]">IPO 안 하면</td><td class="py-2 text-right font-semibold"><span class="text-[color:var(--warn)]">OTC 거래 계속</span> / Issuer 정산 트리거 X</td></tr>
           </tbody>
         </table>
       </div>
@@ -146,7 +196,7 @@
       <div class="rounded-xl p-4 bg-[rgba(255,92,122,.05)] border border-[rgba(255,92,122,.2)]">
         <div class="text-xs text-[color:var(--bad)] font-semibold mb-1">🚫 시나리오 C (확률 ~25%)</div>
         <div class="font-bold text-sm mb-2">IPO 영원히 안 함</div>
-        <div class="text-xs text-[color:var(--muted)] leading-relaxed">Musk가 IPO 미루는 게 본인에게 유리. 차용증 정산 트리거 영영 안 옴 → <b class="text-[color:var(--bad)]">자금 무기한 동결</b>.</div>
+        <div class="text-xs text-[color:var(--muted)] leading-relaxed">Musk가 IPO 미루는 게 본인에게 유리. <b class="text-[color:var(--warn)]">Issuer 정산 트리거 안 옴</b>. OTC 매도는 가능하나 가격 하락 → 0 수렴 가능.</div>
       </div>
       <div class="rounded-xl p-4 bg-[rgba(255,92,122,.08)] border border-[rgba(255,92,122,.3)]">
         <div class="text-xs text-[color:var(--bad)] font-semibold mb-1">💀 시나리오 D (확률 ~10%)</div>
@@ -226,7 +276,7 @@
       <div class="row"><span class="label">총 발행</span><span class="val">94,000개 (~$61.1M)</span></div>
       <div class="row"><span class="label">실물 백업</span><span class="val text-[color:var(--bad)]">없음 (마케팅 과장)</span></div>
       <div class="row"><span class="label">의결권/배당</span><span class="val">없음</span></div>
-      <div class="row"><span class="label">출구 / 정산</span><span class="val">IPO 후 약 6개월 락업 → USDT/주식토큰 <span class="pill pill-warn ml-1">issuer 결정</span></span></div>
+      <div class="row"><span class="label">출구 / 정산</span><span class="val">A) OTC 매도 즉시 / B) Issuer 정산 IPO+6개월 <span class="pill pill-info ml-1">선택</span></span></div>
       <div class="row"><span class="label">유통</span><span class="val">Bitget 내부 OTC만</span></div>
       <div class="row"><span class="label">한국 거주자</span><span class="val text-[color:var(--warn)]">가입 가능 (IP 차단 미확인)</span></div>
 
@@ -302,8 +352,8 @@
           <tr><td class="metric">유동성 채널</td><td>vntl perp DEX (얕음)</td><td>Bitget OTC 내부</td><td>Gate 내부 pre-market</td></tr>
           <tr><td class="metric">외부 출금/이체</td><td>해당 없음 (포지션)</td><td><span class="glow-warn">사실상 불가 (약관 미확인)</span></td><td><span class="glow-warn">명시적 금지 미확인</span></td></tr>
           <tr><td class="metric">장기 보유 비용</td><td><span class="glow-bad">펀딩 연 ~37% (시점 의존)</span></td><td>0 (대기 비용)</td><td>0 (대기 비용)</td></tr>
-          <tr><td class="metric">IPO 시 정산</td><td>해당 없음</td><td>~6개월 락업 → USDT/stock token</td><td>스테이블 정산 추정 (약관 ?)</td></tr>
-          <tr><td class="metric">IPO 미발생 시</td><td>퍼프 계속 / 시장 유지</td><td><span class="glow-bad">무기한 동결</span></td><td><span class="glow-bad">Gate 일방 결정</span></td></tr>
+          <tr><td class="metric">IPO 시 정산</td><td>해당 없음</td><td>A) OTC 매도: <b class="text-[color:var(--good)]">즉시</b> / B) Issuer 정산: IPO+~6개월</td><td>스테이블 정산 추정 (약관 ?)</td></tr>
+          <tr><td class="metric">IPO 미발생 시</td><td>퍼프 계속 / 시장 유지</td><td><span class="glow-warn">OTC 거래 지속 (가격 0 수렴 가능)</span> / Issuer 트리거 X</td><td><span class="glow-bad">Gate 일방 결정</span></td></tr>
           <tr><td class="metric">카운터파티 수</td><td>vntl + USDH (2)</td><td>RepublicCayman + Bitget (2)</td><td>Gate 단일 (1) <span class="glow-bad">최악</span></td></tr>
           <tr><td class="metric">한국 거주자 합법성</td><td>접속 가능 / 자본시장법 보호 ✗</td><td>가입 가능 추정 / 금융위 등록 ✗</td><td>차단 명시 없음 / 금융위 등록 ✗</td></tr>
         </tbody>
